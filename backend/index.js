@@ -17,7 +17,7 @@ console.log("NODE_ENV:", process.env.NODE_ENV);
 app.use(cors({
   origin: function (origin, callback) {
     const allowedOrigins = [
-      "http://localhost:5173","https://jarvis-ywzt.vercel.app"
+      "http://localhost:5173","https://jarvis-ywzt.vercel.app/"
     ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
