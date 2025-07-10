@@ -18,7 +18,7 @@ app.use(cors({
   origin: function (origin, callback) {
     const allowedOrigins = [
       "http://localhost:5173",
-      "https://jarvis-ywzt.vercel.app/signup"
+      "https://jarvis-ywzt.vercel.app"
     ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
